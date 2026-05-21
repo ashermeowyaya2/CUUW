@@ -4,6 +4,10 @@
     /*border: 1px dashed red;*/
 }
 
+body{
+    display: grid;
+}
+
 .navDiv{
     display: flex;
     flex-direction: row;
@@ -18,9 +22,11 @@
     border: 0;
     background-color: brown;
     justify-self: center;
+    width: fit-content;
 }
 #icon{
     filter: invert(1);
+    width: 25px; height: 25px;
 }
 
 .peepeeandpoopoo {
@@ -37,6 +43,7 @@
 }
 
 .mainBox{
+    display: grid;
     width: 75%;
     height: fit-content;
     background-color: black;
@@ -46,9 +53,44 @@
 .mainBox > *{
     justify-self: center;
     display: none;
+    height: 100%;
+    width: 100%;
 }
 .homeBox{
     display: block;
+}
+
+.Box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.OCProfile{
+    height: 225px;
+    width: 180px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.095);
+
+    transition: background-color 0.5s;
+    transition: transform 0.5s;
+}
+.OCProfile:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.03);
+}
+#OCBD , #OCName{
+    margin-left: 5px;
+    text-align: start;
+}
+.OCProfileImg{
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    border-radius: 15px 15px 0 0;
 }
 
 .contributorProfile{
@@ -62,8 +104,8 @@
     height: 50px;
     width: 200px;
 }
-.contributorProfile > *{
-}
+/*.contributorProfile > *{
+}*/
 .circleProfile{
     width: 50px;
     height: 50px;
@@ -72,9 +114,8 @@
 }
 
 img{
-    width: 25px;
-    height: 25px;
     margin: 0;
+    object-fit: cover;
 }
 
 button {
