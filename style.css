@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px dashed red;*/
+}
+
+.navDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    padding: 10px 45px 13px 45px;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 30px 30px;
+    border: 0;
+    background-color: brown;
+    justify-self: center;
+}
+#icon{
+    filter: invert(1);
+}
+
+.peepeeandpoopoo {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0 0 0;
+    justify-self: center;
+    width: 95%;
+    height: fit-content;
+}
+
+.mainBox{
+    width: 75%;
+    height: fit-content;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.mainBox > *{
+    justify-self: center;
+    display: none;
+}
+.homeBox{
+    display: block;
+}
+
+.contributorProfile{
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 10px;
+    margin:0;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 5px;
+    height: 50px;
+    width: 200px;
+}
+.contributorProfile > *{
+}
+.circleProfile{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
